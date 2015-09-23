@@ -1,0 +1,48 @@
+class Participant
+{
+  name;
+ }
+
+class Registration
+{
+  integer id;
+ *->1 Participant participant;
+ *->1 Event event;
+ 
+ }
+
+class Event
+{name;
+ Date eventtime;
+ Time starttime
+ Time endtime
+ }
+
+class RegistrationManager
+{
+  1->* Event event;
+  1->* Registration registration;
+  1->* Participant participant;
+}
+
+//$?[End_of_model]$?
+
+class Participant
+{
+  position 204 86 112 58;
+  }
+
+class Registration
+{
+  position 430 151 109 41;
+  }
+
+class Event
+{
+  position 72 217 133 75;
+    }
+
+class RegistrationManager
+{
+  position 398 312 142 45;
+}
